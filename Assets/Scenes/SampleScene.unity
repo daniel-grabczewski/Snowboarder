@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 59980947}
   m_Layer: 0
   m_Name: Level Sprite Shape
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1702,6 +1702,7 @@ GameObject:
   - component: {fileID: 2013584508}
   - component: {fileID: 2013584511}
   - component: {fileID: 2013584512}
+  - component: {fileID: 2013584513}
   m_Layer: 0
   m_Name: Barry
   m_TagString: Player
@@ -1836,6 +1837,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueAmount: 50
+--- !u!114 &2013584513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013584507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706318ae025bd3a479681c3ef0de973e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2058979448
 GameObject:
   m_ObjectHideFlags: 0
