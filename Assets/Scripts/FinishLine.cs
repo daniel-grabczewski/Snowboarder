@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class FinishLine : MonoBehaviour
       if (other.CompareTag("Player"))
       {
         Debug.Log("You finished!");
+        SceneManager.LoadScene("Level1");
       } 
     }
 }
