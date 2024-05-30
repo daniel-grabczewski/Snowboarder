@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] float loadDelay = 1f;
+
     void OnTriggerEnter2D(Collider2D other) 
     {
       if (other.CompareTag("Player"))
       {
         Debug.Log("You finished!");
-        SceneManager.LoadScene("Level1");
+        Invoke(nameof(ReloadScene), loadDelay);
       } 
+    }
+
+    void ReloadScene() {
+      SceneManager.LoadScene("Level1");
     }
 }
